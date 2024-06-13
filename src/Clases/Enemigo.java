@@ -31,7 +31,17 @@ public class Enemigo extends Coordenadas{
         this.lado2 = nvo.lado2;
     }
     
-    
-    
-    
+    public float Getlado(int lado){
+        if (lado==1){
+            return this.lado1;
+        }
+        if (lado==2) {
+            return this.lado2;
+        }
+        if (lado != 1 && lado != 2) {
+            return 0;
+        }
+        return 0;
+    }
+      
 }

@@ -24,7 +24,8 @@ public class EnemigoGrafico extends Enemigo implements Dibujar{
     
     @Override
     public void dibujar(Graphics dw) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        dw.setColor(color);
+        dw.fillRect((int)this.getX(),(int) this.getY(),(int) this.Getlado(1),(int) this.Getlado(2));
     }
     
     
