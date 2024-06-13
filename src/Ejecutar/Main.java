@@ -30,6 +30,7 @@ public class Main {
         ArregloObjetos.add(enemy);
         ArregloObjetos.add(balas);
         ArregloObjetos.add(nave);
+        
         PanelFG miPanel = new PanelFG(ArregloObjetos);
         
         miventana.add(miPanel);

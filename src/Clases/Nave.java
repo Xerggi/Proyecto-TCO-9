@@ -30,8 +30,8 @@ public class Nave extends Coordenadas{
         this.cor1.setX(b.getX());
         this.cor1.setY(b.getY());
         
-        this.cor2.setX(b.getX());
-        this.cor2.setY(b.getY());
+        this.cor2.setX(c.getX());
+        this.cor2.setY(c.getY());
     }
     
     public Nave(Nave c){

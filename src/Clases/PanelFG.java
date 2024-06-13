@@ -14,11 +14,12 @@ public class PanelFG extends JPanel{
         this.v = asd;
     }
     
-    public void paintComponet(Graphics g){
-        Dibujar draw;
-        for(int i=0;i<v.size();i++){
-            draw = (Dibujar)v.get(i);
-            draw.dibujar(g);
+    public void paintComponent(Graphics g){
+        super.paintComponent(g);
+        for(Object obj:v){
+            if(obj instanceof Dibujar){
+                ((Dibujar)obj).dibujar(g);
+            }
         }
         
     }
