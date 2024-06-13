@@ -7,14 +7,14 @@ import javax.swing.JPanel;
 
 public class PanelFG extends JPanel{
     
-    ArrayList v;
+    ArrayList<Object> v;
     
-    public PanelFG(ArrayList asd){
+    public PanelFG(ArrayList<Object> asd){
         
         this.v = asd;
     }
     
-    public void paint(Graphics g){
+    public void paintComponet(Graphics g){
         Dibujar draw;
         for(int i=0;i<v.size();i++){
             draw = (Dibujar)v.get(i);
