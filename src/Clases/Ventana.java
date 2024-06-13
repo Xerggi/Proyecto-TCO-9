@@ -1,6 +1,7 @@
 
 package Clases;
 
+import java.awt.Color;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import javax.swing.JFrame;
@@ -15,6 +16,7 @@ public class Ventana extends JFrame implements WindowListener{
         super(title);
         setSize(500,500);
         addWindowListener(this);
+        setBackground(Color.black);
     }
 
     @Override
