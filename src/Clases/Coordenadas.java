@@ -44,4 +44,14 @@ public class Coordenadas {
         this.y = y;
     }
     
+    public Coordenadas suma(Coordenadas S){
+        
+        float sumx = this.x + S.getX();
+        float sumy = this.y + S.getY();
+        
+        Coordenadas cor = new Coordenadas(sumx,sumy);
+        
+        return cor;
+        
+    }
 }
