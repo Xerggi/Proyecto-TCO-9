@@ -4,6 +4,8 @@
  */
 package Clases;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author xergg
@@ -12,6 +14,7 @@ public class Nave extends Coordenadas{
 
     public Coordenadas cor1 = new Coordenadas(); 
     public Coordenadas cor2 = new Coordenadas();
+    ArrayList balas = new ArrayList();
     
     public Nave(){
         super();

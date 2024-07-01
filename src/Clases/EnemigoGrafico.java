@@ -3,6 +3,8 @@ package Clases;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.util.ArrayList;
+
 
 /**
  *
@@ -28,7 +30,19 @@ public class EnemigoGrafico extends Enemigo implements Dibujar{
         dw.fillRect((int)this.getX(),(int) this.getY(),(int) this.Getlado(1),(int) this.Getlado(2));
     }
     
+    public void mover(Coordenadas movimiento) {
+        this.setX(this.getX() + movimiento.getX());
+        this.setY(this.getY() + movimiento.getY());
+    }
+
+    public void ciclo() {
+        Coordenadas movimientoAsteroide = new Coordenadas(0, 5);
+        this.mover(movimientoAsteroide);
+    }
     
-    
+    //public void ciclo(){
+      //  float x = this.getY();
+        //this.setY( x += 20);
+    //}
     
 }

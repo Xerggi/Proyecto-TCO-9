@@ -27,7 +27,8 @@ public class BalasGrafico extends Balas implements Dibujar{
        dw.fillOval((int)(this.getX()-this.GetRadio()), (int)(this.getY()-this.GetRadio()), (int)(2*this.GetRadio()), (int)(2*this.GetRadio()));
     }
     
-    
-    
-    
+    public void mover(Coordenadas movimiento){
+        this.setX(this.getX() + movimiento.getX());
+        this.setY(this.getY() + movimiento.getY());
+    }
 }

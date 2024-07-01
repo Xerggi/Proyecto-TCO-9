@@ -43,5 +43,6 @@ public class Enemigo extends Coordenadas{
         }
         return 0;
     }
-      
+    
+    
 }

@@ -7,6 +7,7 @@ package Clases;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Polygon;
+import java.util.ArrayList;
 
 /**
  *
@@ -44,5 +45,5 @@ public class NaveGrafico extends Nave implements Dibujar{
         dw.fillPolygon(p);
     
     }
-    
-}
+   
+    }
